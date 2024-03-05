@@ -1,0 +1,3 @@
+1. to install angular, you need to install node first bcz angular cli uses node in background
+2. then run below command in your local cmd
+   npm install -g @angular/cli
