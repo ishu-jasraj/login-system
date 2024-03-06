@@ -2,8 +2,28 @@
 2. then run below command in your local cmd
    npm install -g @angular/cli
 3. create new project 
-   ng new <project-name> --no-strict
+   ng new <project-name> --no-strict --standalone false --routing false
 4. run project
    ng serve 
    or
    ng serve --open
+
+# If ng serve doesnt work then run below command in the windows powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+#generate component
+ng g c <component-name>
+ng generate component <component-name>
+
+@Component is a decorator provided by ts to enhance its class
+import {Component} from '@angular/core'
+
+app module 
+- diff component combines to form package is app module
+- gives list of features which our componen has
+
+
+
+ 
+
+
