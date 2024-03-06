@@ -1,4 +1,4 @@
-import { Component, ElementRef } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { NgForm } from "@angular/forms";
 
 @Component({
@@ -8,8 +8,17 @@ import { NgForm } from "@angular/forms";
 })
 
 export class LoginComponent{
-    onSubmit(f:NgForm) {
-       console.log(f);
-      }
+    @ViewChild('f') loginForm:NgForm;
+    isValid=true;
+
+    onSubmit(){
+        console.log(this.loginForm)
+        this.isValid = this.loginForm.valid;
+        console.log(this.isValid)
+    }
+    // onSubmit(f:NgForm) {
+    //    console.log(f);
+    //   }
+
     
 }

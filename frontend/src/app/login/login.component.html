@@ -1,27 +1,33 @@
 <div class="container">
    <div class="row">
       <div class="user-form">
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit()" #f="ngForm">
             <div class="user-data">
             <div class="form-group">
-                <label for="email">email:</label>
+                <label for="email">Enter Email:</label>
                 <input 
                 type="text" 
                 class="form-control" 
                 id="email"
                 ngModel
                 name="email"
+                required
+                email
                 />
             </div>
             <div class="form-group">
-                <label for="password">password:</label>
+                <label for="password">Enter Password:</label>
                 <input 
                 type="text" 
                 class="form-control" 
                 id="password"
                 ngModel
                 name="password"
+                required
                 />
+            </div>
+            <div class="validation-msg" *ngIf="!isValid">
+                *Enter valid values
             </div>
             </div>
         <button type="submit" class="submit-btn">Submit</button>
