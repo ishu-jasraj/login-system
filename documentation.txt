@@ -21,6 +21,18 @@ import {Component} from '@angular/core'
 app module 
 - diff component combines to form package is app module
 - gives list of features which our componen has
+------------------------------------------------------------------------------
+FORMS
+
+1. template driven
+
+import formsmodule in app.module.ts
+
+ngSubmit is used in form element to stop form calling htp request
+
+ngForm is used to get the access of the form in developer hand
+
+email,required directives are used for validation
 
 
 
