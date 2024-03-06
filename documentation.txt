@@ -2,7 +2,7 @@
 2. then run below command in your local cmd
    npm install -g @angular/cli
 3. create new project 
-   ng new <project-name> --no-strict --standalone false --routing false
+   ng new <project-name> --no-strict
 4. run project
    ng serve 
    or
